@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>별짱별장캠핑 | 여수 돌산 프라이빗 별장형 캠핑</title>
   <meta name="description" content="여수 돌산의 고지대 산뷰와 저수지가 어우러진 프라이빗 캠핑. 3채 한정 별장형 방갈로(개별 화장실/샤워실/휴게실)와 넓은 공터를 준비 중입니다." />
   <link rel="stylesheet" href="../../css/style.css" />
@@ -12,11 +13,16 @@
 
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="brand" href="./" aria-label="별짱별장캠핑 홈">
-        <span class="brand__name">별짱별장캠핑</span>
-        <span class="brand__tag">Dolsan Private Lodge Camp</span>
-      </a>
+        <a href="/" class="brand">
+          <span class="brand__logo" aria-hidden="true">
+            <img src="../../images/bblogo.png" alt="" />
+          </span>
 
+          <span class="brand__text">
+            <span class="brand__name">별짱별장캠핑</span>
+            <!--span class="brand__tag">Private Lodge Camping</!--span-->
+          </span>
+        </a> 
       <nav class="gnb" aria-label="주요 메뉴">
         <a class="gnb__link" href="#about">특별함</a>
         <a class="gnb__link" href="#lodges">프리미엄</a>
@@ -34,8 +40,10 @@
 
 <section class="hero">
   <div class="hero__overlay"></div>
+  
   <div class="hero__content">
-    <h1>별짱별장 캠핑</h1>
+     <img class="intro__logo" src="../../images/bb-logo-white.png" alt="EJ 로고" />
+     
     <p>
       여수 돌산, 저수지와 산이 어우러진<br />
       소수만을 위한 프라이빗 캠핑 공간
@@ -137,7 +145,7 @@
         </figure>
         <h3 class="feature__title">저수지 & 벚꽃길</h3>
         <p class="feature__desc">
-          봄이면 벚꽃 명소처럼 아름다운 풍경이 펼쳐집니다.
+          봄이면 여수 벚꽃 명소 승월마을의 아름다운 풍경이 눈앞에 펼쳐집니다.
         </p>
       </li>
 
@@ -171,7 +179,7 @@
     <header class="section-head">
       <h2 id="lodges-title" class="section__title">별짱별장의 프리미엄</h2>
       <p class="section__desc">
-        각 방갈로에 <strong>화장실·샤워실·휴게실</strong>을 갖춘
+        각 방갈로에 <strong>개별 화장실·샤워실·휴게실</strong>을 갖춘
         프라이빗 별장형, 프리미엄 캠핑장을 준비 중입니다.
       </p>
     </header>
@@ -196,7 +204,9 @@
 -->
     <div class="lodge-grid" role="list">
       <article class="lodge-card" role="listitem">
-        <div class="lodge-card__icon" aria-hidden="true">🛁</div>
+        <div class="lodge-card__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-toilet-icon lucide-toilet"><path d="M7 12h13a1 1 0 0 1 1 1 5 5 0 0 1-5 5h-.598a.5.5 0 0 0-.424.765l1.544 2.47a.5.5 0 0 1-.424.765H5.402a.5.5 0 0 1-.424-.765L7 18"/><path d="M8 18a5 5 0 0 1-5-5V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8"/></svg>
+        </div>
         <h3 class="lodge-card__title">개별 화장실</h3>
         <p class="lodge-card__desc">
           각 방갈로에 전용 화장실을 제공합니다. 쾌적함과 프라이버시를 지켜요.
@@ -204,7 +214,9 @@
       </article>
 
       <article class="lodge-card" role="listitem">
-        <div class="lodge-card__icon" aria-hidden="true">🚿</div>
+        <div class="lodge-card__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bath-icon lucide-bath"><path d="M10 4 8 6"/><path d="M17 19v2"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+        </div>
         <h3 class="lodge-card__title">개별 샤워실</h3>
         <p class="lodge-card__desc">
           전용 샤워실로 편안한 동선을 만들었습니다. 가볍게 씻고 바로 쉬세요.
@@ -212,7 +224,9 @@
       </article>
 
       <article class="lodge-card" role="listitem">
-        <div class="lodge-card__icon" aria-hidden="true">🛋️</div>
+        <div class="lodge-card__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-armchair-icon lucide-armchair"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
+        </div>
         <h3 class="lodge-card__title">개별 휴게공간</h3>
         <p class="lodge-card__desc">
           휴게실에서 여유롭게 쉬고 준비할 수 있어요. 냉/난방기가 구비되어 있습니다.
@@ -220,7 +234,9 @@
       </article>
 
       <article class="lodge-card" role="listitem">
-        <div class="lodge-card__icon" aria-hidden="true">🛋️</div>
+        <div class="lodge-card__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mountain-icon lucide-mountain"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+        </div>
         <h3 class="lodge-card__title">넓은 공터</h3>
         <p class="lodge-card__desc">
            텐트를 칠 수 있는 넓은 공간과 아이들이 안전하게 뛰어놀 수 있는

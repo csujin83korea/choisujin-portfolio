@@ -31,9 +31,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* =========================
-   Camping Page (Warm / Wood)
-   ========================= */
 /* Layout helpers */
 .container {
   max-width: 1200px;
@@ -75,6 +72,24 @@ html {
 .site-header__cta {
   margin-left: auto;
   white-space: nowrap;
+}
+
+.brand__logo {
+  display: flex;
+  align-items: center;
+}
+
+.brand__logo img {
+  width: 28px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .brand {
@@ -277,7 +292,7 @@ html {
   display: block;
 }
 .feature__title {
-  margin: 18px 20px 8px;
+  margin: 18px 8px 8px;
   font-size: 17px;
   letter-spacing: -0.01em;
 }
@@ -291,7 +306,7 @@ html {
   margin-bottom: 10px;
 }
 .feature__desc {
-  margin: 0 20px 22px;
+  margin: 0 8px 22px;
   color: #555;
   font-size: 14px;
   line-height: 1.8;
@@ -308,7 +323,7 @@ html {
      object-position: center 95%;
 }
 
-/* Lodges (Premium) */
+/* Lodges */
 .lodges__top {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -563,7 +578,6 @@ html {
   grid-row: 1/span 2 !important;
 }
 
-/* 이미지도 셀에 딱 맞춤 */
 .gallery-grid.gallery-grid--two-rows .gallery-item img {
   width: 100%;
   height: 100%;
@@ -580,7 +594,6 @@ html {
   transform: scale(1.05);
 }
 
-/* Mobile: 한 줄 스와이프(너가 원하던 기존 UX 유지) */
 @media (max-width: 900px) {
   .gallery-slider__btn {
     display: none;
@@ -736,7 +749,6 @@ html {
   animation: scrollPulse 1.6s ease-in-out infinite;
 }
 
-/* Hero needs relative for absolute positioning */
 .hero {
   position: relative;
 }
@@ -814,7 +826,7 @@ html {
   .gallery-grid.gallery-grid--swipe .gallery-item--lg,
   .gallery-grid.gallery-grid--swipe .gallery-item--wide {
     height: 190px;
-    min-height: 0 !important; /* ← 이게 핵심 */
+    min-height: 0 !important;
   }
   .gallery-grid.gallery-grid--swipe .gallery-item img {
     height: 100%;
@@ -840,9 +852,6 @@ html {
   .lodge-grid {
     grid-template-columns: 1fr;
   }
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
   .gallery-item,
   .gallery-item--lg,
   .gallery-item--wide {
@@ -861,11 +870,6 @@ html {
   }
   .hero__title {
     font-size: 32px;
-  }
-  .feature-list,
-  .card-grid,
-  .gallery-grid {
-    grid-template-columns: 1fr;
   }
   .location__row {
     grid-template-columns: 1fr;
@@ -1024,6 +1028,10 @@ body {
   font-size: clamp(20px, 3vw, 30px);
   line-height: 1.25;
   font-weight: 600;
+}
+
+.intro__highlights {
+  margin-top: 8px;
 }
 
 .intro__desc {
@@ -1191,7 +1199,6 @@ body {
   }
 }
 /* ---------- Brand ---------- */
-/* ===== Brand Categories (Skills-like) ===== */
 .brand-cats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1266,7 +1273,7 @@ body {
 
 /* 작은 썸네일 */
 .thumb--sm {
-  width: 120px; /* ← 기존보다 약 50px 축소 */
+  width: 120px;
   height: 90px;
   border-radius: 8px;
   border: 1px solid var(--line);
@@ -1342,7 +1349,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
-  background: #111; /* 이미지 주변 여백 정리 */
+  background: #111;
 }
 
 .lightbox__caption {

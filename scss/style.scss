@@ -146,7 +146,9 @@ body{
   line-height:1.25;
   font-weight:600;
 }
-
+.intro__highlights{
+margin-top:8px;
+}
 .intro__desc{
  // max-width:70ch;
   font-size:16px;
@@ -318,7 +320,6 @@ body{
 }
 
 /* ---------- Brand ---------- */
-/* ===== Brand Categories (Skills-like) ===== */
 .brand-cats{
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -390,7 +391,7 @@ body{
 
 /* 작은 썸네일 */
 .thumb--sm{
-  width:120px;          /* ← 기존보다 약 50px 축소 */
+  width:120px;          
   height:90px;
   border-radius:8px;
   border:1px solid var(--line);
@@ -462,7 +463,7 @@ body{
   max-height: 75vh;
   object-fit: contain;
   display:block;
-  background:#111; /* 이미지 주변 여백 정리 */
+  background:#111; 
 }
 
 .lightbox__caption{
